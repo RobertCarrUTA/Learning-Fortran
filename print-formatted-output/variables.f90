@@ -2,6 +2,9 @@ program printFormat
     ! This file will be heavily commented because I want to learn and remember
     ! what I was doing long from when I complete this
     implicit none
+    ! All your varaible definitions have to be declared at the top in this area
+    character(len=5) :: i_char
+
     print *, "A number ", 10
 
     ! Printing an integer with formatting
@@ -30,5 +33,9 @@ program printFormat
     ! a will represent strings with 5 spaces
     ! i will represent an integer with 2 spaces
     print "(a5, i2)", "I am ", 43
+
+    ! To left justify numbers - adjustl()
+    write (i_char, "(i5)") 10
+    print "(a, a)", "A number ", adjustl(i_char)
 
 end program printFormat
