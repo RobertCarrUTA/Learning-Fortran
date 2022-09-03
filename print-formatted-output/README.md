@@ -1,5 +1,6 @@
-This is the basics and user input folder for Fortran.
+This program is just a basic program that shows how to format output in Fortran.
 
 ## Compile Instructions
 
-Compile Instructions can be found in the folders the programs are contained in.
+- To compile this program: gfortran format.f90
+- To run this program: ./a.out
